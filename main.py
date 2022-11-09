@@ -19,7 +19,8 @@ if __name__ == '__main__':
 
   # 画像格納フォルダ
   png_Folder = "./png"
-  listfolder = natsorted(os.listdir(png_Folder)) # 数字順にソート
+  listfolder = [filename for filename in natsorted(os.listdir(png_Folder)) if not filename.startswith('.')]
+
 
   print(listfolder)
 
