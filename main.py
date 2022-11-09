@@ -19,6 +19,7 @@ if __name__ == '__main__':
 
   # 画像格納フォルダ
   png_Folder = "./png"
+  # 隠しファイル以外をファイル名昇順に格納
   listfolder = [filename for filename in natsorted(os.listdir(png_Folder)) if not filename.startswith('.')]
 
 
